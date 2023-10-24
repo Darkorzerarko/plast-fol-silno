@@ -1,6 +1,7 @@
 'use client' 
 // ?
 import {AiOutlineZoomIn, AiFillCloseCircle} from 'react-icons/ai'
+import nextConfig from '../../../../next.config'
 import {useState } from 'react'    
 import Image from 'next/image'
 
@@ -59,7 +60,7 @@ export default function Gallery(){
 
                     <div className={styles.gallery_img_wrapper}>
                         <Image 
-                            src={"/gallery-"+image+"-half-res2.jpg"}
+                            src={nextConfig.basePath+"/gallery-"+image+"-half-res2.jpg"}
                             alt={imageAlt[image-1]}
                             width="10000"
                             height="10000"  

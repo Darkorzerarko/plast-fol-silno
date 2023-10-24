@@ -1,6 +1,7 @@
 import styles from './page.module.scss'
 
 import { MdRecycling, MdOutlineVerifiedUser } from "react-icons/md"
+import nextConfig from '../../../next.config';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 
 import NavBar from '../components/nav-bar/nav-bar';
@@ -74,7 +75,7 @@ export default function AboutUs() {
               <h2>Recykling i produkcja</h2>
               Wytworzony podczas recyklingu regranulat używany jest do wytwarzania foli LDPE, która jest głównym elementem naszej produkcji. 
               Z niej tworzy się następnie taśmy, rękawy czy worki.
-              <a href="/oferta">Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></a>
+              <a href={nextConfig.basePath+"/oferta"}>Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></a>
 
             </div>
           </div>

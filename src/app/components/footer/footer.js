@@ -1,4 +1,5 @@
 import styles from "./footer.module.scss"
+import nextConfig from "../../../../next.config"
 
 import { AiOutlineHome} from 'react-icons/ai'
 import { GrCircleInformation } from "react-icons/gr"
@@ -14,7 +15,7 @@ export default function Footer(){
                 <div className={styles.footer_top}>
                     <div className={styles.company_logo_name}>
                         <a href="/" alt="Strona główna" className={styles.logo}>
-                            <img src="logo.svg" alt="Logo Plast-Fol" />
+                            <img src={nextConfig.basePath+"/logo.svg"} alt="Logo Plast-Fol" />
                         </a>
                         <div style={{paddingLeft: "1em"}}>
                             P.P.H.U. PLAST-FOL s.c<br />
@@ -22,10 +23,10 @@ export default function Footer(){
                         </div>
                     </div>
                     <div className={styles.bottom_nav}>
-                        <a href='/' tabIndex="0"><AiOutlineHome /> Strona Główna</a>
-                        <a href='/o-nas' tabIndex="0"><GrCircleInformation /> O nas</a>   
-                        <a href='/oferta' tabIndex="0"><MdOutlineLocalOffer /> Oferta</a>
-                        <a href='/kontakt' tabIndex="0"><HiPhone /> Kontakt</a>
+                        <a href={nextConfig.basePath+'/'} tabIndex="0"><AiOutlineHome /> Strona Główna</a>
+                        <a href={nextConfig.basePath+'/o-nas'} tabIndex="0"><GrCircleInformation /> O nas</a>   
+                        <a href={nextConfig.basePath+'/oferta'} tabIndex="0"><MdOutlineLocalOffer /> Oferta</a>
+                        <a href={nextConfig.basePath+'/kontakt'} tabIndex="0"><HiPhone /> Kontakt</a>
                     </div>
                 </div>
                 
