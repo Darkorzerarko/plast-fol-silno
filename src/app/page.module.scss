@@ -1,0 +1,222 @@
+@import "variables.scss";
+
+.company_age_wrapper {
+    width: 100%;
+
+    .company_age {
+        @include resp-c-60w(1600px);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        .company_age_graphic{
+            display: flex;
+            justify-content: center;
+            width: clamp(1em, 30%, 40%);
+            font-family: 'Anton', sans-serif;
+            background-image: url("/age-bg.jpg");
+            background-size: cover;
+            background-clip: text;
+            color: transparent;
+            font-size: 30em;
+            line-height: 120%;
+        }
+
+        .company_age_description {
+            width: clamp(1em, 50%, 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .top{
+                color: $pakistan-green;
+                font-size: 1.3em;
+                h1{
+                    margin: 0 0 1em 0;
+                }
+            }
+            a{
+                transition: background-color .3s ease-in;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                margin: 1em 0 1em 0;
+                background-color: $pakistan-green;
+                color: white;
+                padding: .7em .5em .7em 2em;
+                border-radius: 20px;
+                svg{
+                    margin-left: .5em;
+                    font-size: 1.2em;
+                    transition: margin-left .3s ease-in, opacity .3s ease-in;
+                    opacity: 0;
+                }
+                &:hover{
+                    background-color: lighten($pakistan-green, 10%);
+                    transition: all .3s ease-in;
+                    svg{
+                        margin-left: 1em;
+                        transition: all .3s ease-in;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1300px ) {
+            justify-content: center;
+    
+            .company_age_graphic{
+                font-size: 20em;
+            }
+            .company_age_description{
+                width: 90%;
+                .bottom {
+                    padding-bottom: 2em;
+                }
+            }
+        }
+
+    }
+}
+
+
+.company_activities_wrapper {
+    width: 100%;
+    padding: 2em 0 2em 0;
+    background-color: $mint-cream;
+
+    .company_activities{
+
+        @include resp-c-60w(1600px);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        .company_activities_description{
+
+            width: clamp(1em, 50%, 60%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .top{
+                color: $pakistan-green;
+                font-size: 1.3em;
+            }
+           
+            a{
+                transition: background-color .3s ease-in;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                margin: 1em 0 1em 0;
+                background-color: $pakistan-green;
+                color: white;
+                padding: .7em .5em .7em 2em;
+                border-radius: 20px;
+                svg{
+                    margin-left: .5em;
+                    font-size: 1.2em;
+                    transition: margin-left .3s ease-in, opacity .3s ease-in;
+                    opacity: 0;
+                }
+                &:hover{
+                    background-color: lighten($pakistan-green, 10%);
+                    transition: all .3s ease-in;
+                    svg{
+                        margin-left: 1em;
+                        transition: all .3s ease-in;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1300px ) {
+            justify-content: center;
+            
+            .company_activities_description {
+                width: 90%;
+            }
+        }
+    }
+}
+
+.contact_wrapper{
+    width: 100%;
+    padding: 2em 0 2em 0;
+
+    .contact{
+        
+        @include resp-c-60w(1600px);
+        position: relative;
+        // height: 200px;
+        // padding-left: 5%;
+        // padding-right: 5%;
+        color: white;
+        background-color: $pakistan-green;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 150px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 50px;
+        justify-content: space-between;
+        
+        .contact_data{
+            width: 70%;
+            margin-left: 5%;
+            padding-top: 1em;
+
+            a{
+                transition: background-color .3s ease-in;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                margin: 1em 0 1em 0;
+                background-color: $mint-cream;
+                color: $pakistan-green;
+                padding: .7em .5em .7em 2em;
+                border-radius: 20px;
+                svg{
+                    margin-left: .5em;
+                    font-size: 1.2em;
+                    transition: margin-left .3s ease-in, opacity .3s ease-in;
+                    opacity: 0;
+                }
+                &:hover{
+                    background-color: darken($mint-cream, 10%);
+                    transition: all .3s ease-in;
+                    svg{
+                        margin-left: 1em;
+                        transition: all .3s ease-in;
+                        opacity: 1;
+                    }
+                }
+            }
+            
+        }
+
+        .contact_svg{
+            display: flex;
+            align-self: center;
+            height: 100%;
+            width: 20%;
+            margin-right: 10%;
+            stroke: $mint-cream
+        }
+        @media only screen and (max-width: 1300px ) {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: 1000px ) {
+            border-radius: 0;
+            width: 100%;
+            .contact_data{
+                width: 55%;
+            }
+            .contact_svg{
+                width: 30%;
+                margin-right: 5%;
+            }
+        }
+    }
+    
+}

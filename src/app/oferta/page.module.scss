@@ -1,0 +1,312 @@
+@import "../variables.scss";
+
+.greeting_wrapper{
+    width: 100%;
+    // background-color: $pakistan-green;
+    // color: white;
+    .greeting{
+        @include resp-c-60w(1600px);
+        font-size: 1.2rem;
+        @media only screen and (max-width: 900px){
+            width: 90%;
+        }
+    }
+}
+//  NEW WERSION BELOW
+.products_wrapper{
+    width: 100%;
+
+    .products_categories_wrapper{
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+
+        *{
+            transition: all .3s ease-in-out;
+        }
+
+        background-color: $pakistan-green;
+        width: 100%;
+        height: 5em;
+        display: flex;
+        align-items: center;
+
+
+        .products_categories{
+            @include resp-c-60w(1600px);
+            height: 100%;
+            align-items: center;
+            button{
+                @include clear-button;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 24%;
+                height: 80%;
+                padding: 0;
+                color: white;
+                font-size: 1.5rem;
+                &:hover {
+                    background-color: rgb($mint-cream, .4);
+                }
+                @media only screen and (max-width: 900px){
+                    font-size: 1em;
+                }    
+            }
+            @media only screen and (max-width: 900px){
+                width: 100%;
+            }
+            .category_separator{
+                background-color: $mint-cream;
+                width: 3px;
+                height: 80%;
+            }
+                
+        }
+        @media only screen and (max-width: 900px){
+            height: 3em;
+            // width: 100%;
+        }   
+    }
+
+    .products_elements_wrapper{
+        margin: 2em 0;
+
+        .product_wrapper{
+            position: relative;
+            margin: 1em 0 0 0;
+            // background-color: red;
+            min-height: 30em;
+            .product_anchor{
+                position: absolute;
+                top: -6em;
+                @media only screen and (max-width: 900px){
+                    top: -3.9em;
+                } 
+            }
+
+            .product{
+                @include resp-c-60w(1600px);
+                min-height: 30em;
+                overflow: hidden;
+                flex-wrap: wrap;
+                
+                .product_graphic{
+                    padding-top: 3em;
+                    display: flex;
+                    justify-content: center;
+                    width: 50%;
+                    // height: 100%;
+                    @media only screen and (max-width: 1300px){
+                        width: 100%;
+                        border-bottom: solid 2px $pakistan-green;
+                    } 
+                }
+
+                .product_description{
+                    width: 50%;
+                    .additional{
+                        color: $pakistan-green;
+                    }
+                    @media only screen and (max-width: 1300px){
+                        width: 100%;
+                    } 
+                }
+            }
+        }
+
+        .product_separator{
+            width: 100%;
+            height: 2px;
+            background-color: $pakistan-green;
+            @media only screen and (max-width: 1300px){
+                height: 4px
+            } 
+        }
+
+
+        // .product_wrapper{
+        //     position: relative;
+        //     @include resp-c-60w(1600px);
+        //     height: 30em;
+        //     margin: 1em auto;
+        //     .product_graphic{
+        //         width: 50%;
+        //     }
+
+        //     .product_description{
+        //         width: 50%;
+        //     }
+
+        //     // border-bottom: solid 2px $pakistan-green;
+        //     // img {
+        //     //     position: absolute;
+        //     //     top: 10%;
+        //     //     // transform-origin: top;
+        //     //     height: 90%;
+        //     //     // max-width: 90%;
+        //     // }
+        //     overflow: hidden;
+            
+        // }
+        // .product_separator{
+        //     width: 100%;
+        //     background-color: $pakistan-green;
+        //     height: 2px;
+        // }
+    }
+    
+
+    
+
+}
+
+// NEW WERSION ABOVE
+
+// .product{
+//     position: relative;
+//     width: 100%;
+//     background-color: white;
+
+//     .product_wrapper{
+//         @include resp-c-60w(1600px);
+//         flex-wrap: wrap-reverse;
+//         align-items: flex-start;
+
+//         .product_graphic{   
+//             position: relative;
+//             height: 40rem;
+
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             width: 50%;
+
+//             img {
+//                 position: absolute;
+//                 bottom: -90%;
+//                 // transform-origin: top;
+//                 height: 90%;
+//                 // max-width: 90%;
+//             }
+//             @media only screen and (max-width: 900px){
+//                 width: 90%;
+//                 height: 30rem;
+//                 img {
+//                     bottom: -125%;
+//                     // width: 80%;
+//                     height: 110%;
+//                 }
+//             }
+//         }
+//         .product_description{
+//             width: 50%;
+//             height: 40rem;
+//             line-height: 150%;
+//             // font-size: 1.1rem;
+
+//             .li{
+//                 display: flex;  
+//                 .li_worek{
+//                     opacity: 0;
+//                     overflow: hidden;
+//                 }
+//             }
+
+//             .additional{
+//                 height: 0;
+//                 overflow: hidden;
+//                 color: $pakistan-green;
+//             }
+
+//             @media only screen and (max-width: 900px){
+//                 width: 90%;
+//                 height: auto;
+//             }
+            
+//             // ///////////////
+//             // input[type=checkbox] {
+//             //     display: none;
+//             // }
+//             // label {
+//             //     display: inline-block;
+//             //     cursor: pointer;
+//             //     position: relative;
+//             //     padding-left: 2em;
+//             //     height: 1.5em;;
+//             // }
+//             // label:before {
+//             //     content: "";
+//             //     display: inline-block;
+               
+//             //     width: 1.3em;
+//             //     height: 1.3em;
+               
+//             //     margin-right: 10px;
+//             //     position: absolute;
+//             //     left: 2px;
+//             //     bottom: 2px;
+//             //     background-color: white;
+//             //     border-radius: 25%;
+//             //     // border: solid $pakistan-green 3px;
+//             //     outline: solid 2px $pakistan-green;
+//             //     // box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+//             // }
+//             // input[type=checkbox]:checked + label:before {
+//             //     content: "\2713";
+//             //     font-size: 1em;
+//             //     color: $pakistan-green;
+//             //     text-align: center;
+//             //     line-height: 1.3em;
+//             // }
+//             // ///////////////
+
+//         }
+//         overflow: hidden;
+//     }
+
+//     .products_categories{
+
+//         *{
+//             transition: all .3s ease-in-out;
+//         }
+
+//         background-color: $pakistan-green;
+//         width: 100%;
+//         height: 15%;
+//         display: flex;
+//         align-items: center;
+//         position: absolute;
+//         bottom: 0;
+//         .products_category_wrapper{
+//             @include resp-c-60w(1600px);
+//             height: 100%;
+//             align-items: center;
+//             .category{
+//                 @include clear-button;
+//                 width: 24%;
+//                 height: 80%;
+//                 padding: 0;
+//                 color: white;
+//                 font-size: 1.5rem;
+//                 &:hover {
+//                     background-color: rgb($mint-cream, .4);
+//                 }
+//                 @media only screen and (max-width: 900px){
+//                     font-size: 1rem;
+//                 }    
+//             }
+
+//             .category_separator{
+//                 background-color: $mint-cream;
+//                 width: 3px;
+//                 height: 80%;
+//             }
+                
+//         }
+//         @media only screen and (max-width: 900px){
+//             height: 5%;
+//         }   
+//     }
+// }
+

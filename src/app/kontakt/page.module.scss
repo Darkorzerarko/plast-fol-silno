@@ -1,0 +1,67 @@
+@import "../variables.scss";
+
+.contact {
+    padding: 2em 0;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+    .contact_wrapper {
+        @include resp-c-60w(1600px);
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        font-size: 1.2rem;
+
+        svg {
+            fill: $pakistan-green;
+        }
+
+        .contact_address {
+            width: 45%;
+
+            .address {
+                display: flex;
+
+                svg {
+                    scale: 1.2;
+                    margin-right: 0.5rem;
+                }
+                .office_opening_hours {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .contact_separator {
+            background-color: $pakistan-green;
+            width: 0.2rem;
+            border-radius: 0.1rem;
+        }
+
+        .contact_data {
+            width: 45%;
+            padding-bottom: 1em;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
+            svg {
+                scale: 1.2;
+                margin-right: 0.5rem;
+            }
+        }
+
+        @media only screen and (max-width: 1300px) {
+            justify-content: center;
+            .contact_data,
+            .contact_address {
+                width: 90%;
+            }
+            .contact_separator {
+                display: none;
+            }
+        }
+    }
+}

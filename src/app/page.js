@@ -1,95 +1,83 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.scss'
+
+import NavBar from './components/nav-bar/nav-bar'
+import CompanyAge from './components/company-age/company-age';
+import Gallery from './components/gallery/gallery';
+import LocationEmbeded from './components/company-location/company_location';
+import Footer from './components/footer/footer';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import { TbMessageCircleQuestion } from 'react-icons/tb'
 
 export default function Home() {
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <NavBar quote={"Folie i Worki Foliowe na Miarę Twoich Potrzeb"}>
+        
+        Producent foli i opakowań foliowych <br />P.P.H.U. PLAST-FOL s.c Mariusz i Artur Rzeźnik
+      </NavBar>
+      
+      <div className={styles.content}>
+
+        <div className={styles.company_age_wrapper}>
+          <div className={styles.company_age}>
+            <div className={styles.company_age_graphic}><CompanyAge/></div>
+            <div className={styles.company_age_description}>
+              <div className={styles.top}>
+                O NAS
+                <h1><CompanyAge/> lat doświadczenia</h1>  
+              </div>
+              <div className={styles.bottom}>
+                Firma Plast-Fol ma swoje korzenie w malowniczym Silnie, położonym w województwie pomorskim. 
+                Z każdym rokiem nasza firma udowadnia, że przyszłość przemysłu może być bardziej ekologiczna i odpowiedzialna.
+              </div>
+              <a href="/o-nas">Dowiedz się więcej <BsFillArrowRightCircleFill /></a>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className={styles.company_activities_wrapper}>
+          <div className={styles.company_activities}>
+            <div className={styles.company_activities_description}>
+              <div className={styles.top}>
+                <h1>Profil Działalności</h1>
+              </div>
+              <div className={styles.bottom}>
+                Do produkcji naszych produktów używamy własnoręcznie wytworzonego regranulatu <b>LDPE</b>.
+                Dbamy o to by był on wysokiej jakości co przekłada się na jakość naszych produktów.<br />
+                Produkujemy między innymi:<br />
+                <ul>
+                  <li>Taśmę foliową</li>
+                  <li>Rękaw foliowy</li>
+                  <li>Półrękaw foliowy</li>
+                  <li>Worki foliowe</li>
+                </ul>
+              </div>
+              <a href="/oferta">Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></a>
+            </div>
+            <Gallery />
+          </div>
+        </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <div className={styles.contact_wrapper}>
+          <div className={styles.contact}>
+            <div className={styles.contact_data}>
+              <h1>
+                Zainteresowany?<br />
+              </h1>
+              a może<br/>
+              <h1>Masz pytanie?</h1>
+              <a href="/kontakt">Skontaktuj się z nami <BsFillArrowRightCircleFill /></a>
+            </div>
+            <TbMessageCircleQuestion className={styles.contact_svg}/>
+          </div>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <LocationEmbeded>
+          Tu jesteśmy
+        </LocationEmbeded>
+      </div>  
+      <Footer />
+    </>
   )
 }

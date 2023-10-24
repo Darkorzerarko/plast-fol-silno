@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+body{
+    width: 100vw;
+///////////////////////////////////
+    position: relative;
+    min-height: 100vh;
+///////////////////////////////////
+    // background-color: $mint-cream;
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;
+    // overflow-y:auto;
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    // DEBUG ONLY \|/
+    // * {
+    //     outline: rgb(0, 128, 0, 0.5) solid 5px;
+    // }
+}
+// FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Yanone+Kaffeesatz:wght@500&display=swap');

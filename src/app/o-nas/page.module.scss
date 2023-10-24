@@ -1,0 +1,152 @@
+@import "../variables.scss";
+
+.company_information_wrapper {
+    @include resp-c-60w(1600px);
+    flex-direction: column;
+    padding-top: 2em;
+    .company_information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .left {
+            width: 60%;
+            b {
+                color: $pakistan-green;
+            }
+        }
+        .right {
+            width: 35%;
+            h3 {
+                display: flex;
+                align-items: center;
+                svg {
+                    padding-right: 0.2em;
+                    fill: $pakistan-green;
+                }
+            }
+        }
+        @media only screen and (max-width: 1300px) {
+            flex-direction: column;
+            .left,
+            .right {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.about_us_img {
+    @include resp-c-60w(1600px);
+
+    flex-direction: column;
+    margin: 2em auto;
+    border-radius: 30px;
+    background-color: $pakistan-green;
+    color: white;
+
+    h2 {
+        padding-left: 1em;
+        text-align: center;
+    }
+    .image_wrapper {
+        transition: all 0.3s ease-in;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        height: 20em;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            // &:hover{
+            //     width: 101%;
+            // }
+        }
+        @media only screen and (max-width: 1300px) {
+            transition: all 0.3s ease-in;
+            height: 12em;
+        }
+        overflow: hidden;
+    }
+}
+
+.about_us_production_wrapper {
+    width: 100%;
+    background-color: $mint-cream;
+    padding: 2em 0;
+    .about_us_production {
+        @include resp-c-60w(1600px);
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .image_wrapper {
+            position: relative;
+            width: 20%;
+
+            svg {
+                fill: $pakistan-green;
+                width: 100%;
+                rotate: -10deg;
+                height: 100%;
+            }
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+
+            a {
+                transition: background-color 0.3s ease-in;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                margin: 1em 0 1em 0;
+                background-color: $pakistan-green;
+                color: white;
+                padding: 0.7em 0.5em 0.7em 2em;
+                border-radius: 20px;
+                svg {
+                    margin-left: 0.5em;
+                    font-size: 1.2em;
+                    transition:
+                        margin-left 0.3s ease-in,
+                        opacity 0.3s ease-in;
+                    opacity: 0;
+                }
+                &:hover {
+                    background-color: lighten($pakistan-green, 10%);
+                    transition: all 0.3s ease-in;
+                    svg {
+                        margin-left: 1em;
+                        transition: all 0.3s ease-in;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 1300px) {
+            .image_wrapper{
+                width: 90%;
+                height: 20em;
+            }
+            .text{
+                width: 90%;
+            }
+        }
+    }
+}
+
+.about_us_wrapper {
+    @include resp-c-60w(1600px);
+    flex-direction: column;
+
+    padding-bottom: 2em;
+
+    @media only screen and (max-width: 1300px) {
+        width: 90%;
+    }
+}
