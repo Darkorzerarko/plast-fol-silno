@@ -7,6 +7,7 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import NavBar from '../components/nav-bar/nav-bar';
 import CompanyAge from '../components/company-age/company-age'
 import Footer from '../components/footer/footer';
+import Image from 'next/image';
 
 export default function AboutUs() {
 
@@ -49,7 +50,11 @@ export default function AboutUs() {
 
         <div className={styles.about_us_img}>
           <div className={styles.image_wrapper}>
-            <img src="about-us1.jpg" alt="Starannie zapakowane rolki z folią" />      
+            <Image 
+              src="about-us1.jpg"
+              alt="Starannie zapakowane rolki z folią"
+              fill={true}
+            />
           </div>
           <h2>Folie i Worki Foliowe na Miarę Twoich Potrzeb</h2>
           {/* <h2>Jakość naszych produktów przekłada się również na jakość ich pakowania</h2> */}

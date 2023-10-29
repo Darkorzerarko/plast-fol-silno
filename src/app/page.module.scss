@@ -1,5 +1,4 @@
 @import "variables.scss";
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .company_age_wrapper {
     width: 100%;
@@ -12,13 +11,14 @@
         .company_age_graphic{
             display: flex;
             justify-content: center;
-            width: clamp(1em, 30%, 40%);
-            font-family: 'anton', 'fantasy', sans-serif;
+            // width: clamp(1em, 30%, 40%);
+            // font-family: 'anton', 'fantasy', sans-serif;
 
             @font-face {
                 font-family: "Anton";
-                src: url("/fonts/Anton-Regular.ttf");
+                src: url("/plast-fol-silno/fonts/Anton-Regular.ttf");
             }
+            font-family: "Anton", sans-serif;
 
             background-image: url("/plast-fol-silno/age-bg.jpg");
             background-size: cover;
@@ -26,6 +26,8 @@
             color: transparent;
             font-size: 30em;
             line-height: 120%;
+
+            user-select: none
         }
 
         .company_age_description {
