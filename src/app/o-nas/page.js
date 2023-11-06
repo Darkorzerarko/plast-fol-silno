@@ -9,6 +9,8 @@ import CompanyAge from '../components/company-age/company-age'
 import Footer from '../components/footer/footer';
 import Image from 'next/image';
 
+import aboutUs1 from "../../../public/about-us1.webp"
+
 export default function AboutUs() {
 
   return (
@@ -51,9 +53,10 @@ export default function AboutUs() {
         <div className={styles.about_us_img}>
           <div className={styles.image_wrapper}>
             <Image 
-              src="about-us1.jpg"
+              src={aboutUs1}
               alt="Starannie zapakowane rolki z folią"
               fill={true}
+              placeholder="blur"
             />
           </div>
           <h2>Folie i Worki Foliowe na Miarę Twoich Potrzeb</h2>

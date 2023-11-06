@@ -21,6 +21,7 @@ export default function LocationEmbeded({children}) {
                     allowFullScreen={true} 
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
+                    name="Lokalizacja naszej firmy"
                 ></iframe>
             </div>
         </div>
