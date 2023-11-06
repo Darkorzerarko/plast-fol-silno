@@ -27,27 +27,21 @@ export default function Gallery(){
     return (
         <>
             <div className={styles.company_activities_gallery}>
-                <button onClick={() => toggleBigGallery(1)}>
-                    <div id={styles.img_1} className={styles.image}>                    
-                        <AiOutlineZoomIn className={styles.zoom_icon}/>
-                    </div>  
-                </button>
-                <button onClick={() => toggleBigGallery(2)}>
-                    <div id={styles.img_2} className={styles.image}>
-                        <AiOutlineZoomIn className={styles.zoom_icon}/>
-                    </div>
-                </button>
-                <button onClick={() => toggleBigGallery(3)}>
-                    <div id={styles.img_3} className={styles.image}>
-                        <AiOutlineZoomIn className={styles.zoom_icon}/>
-                    </div>
-                </button>
-                <button onClick={() => toggleBigGallery(4)}>
-                    <div id={styles.img_4} className={styles.image}>
-                        <AiOutlineZoomIn className={styles.zoom_icon}/>
-                    </div>
-                </button>
-                
+                <div id={styles.img_1} className={styles.image} onClick={() => toggleBigGallery(1)}>                    
+                    <AiOutlineZoomIn className={styles.zoom_icon}/>
+                </div>  
+
+                <div id={styles.img_2} className={styles.image} onClick={() => toggleBigGallery(2)}>
+                    <AiOutlineZoomIn className={styles.zoom_icon}/>
+                </div>
+
+                <div id={styles.img_3} className={styles.image} onClick={() => toggleBigGallery(3)}>
+                    <AiOutlineZoomIn className={styles.zoom_icon}/>
+                </div>
+
+                <div id={styles.img_4} className={styles.image} onClick={() => toggleBigGallery(4)}>
+                    <AiOutlineZoomIn className={styles.zoom_icon}/>
+                </div>
             </div>
 
             {

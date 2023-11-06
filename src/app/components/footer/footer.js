@@ -15,7 +15,10 @@ export default function Footer(){
                 <div className={styles.footer_top}>
                     <div className={styles.company_logo_name}>
                         <a href="/" alt="Strona główna" className={styles.logo}>
-                            <img src={nextConfig.basePath+"/logo.svg"} alt="Logo Plast-Fol" />
+                            <img src={nextConfig.basePath+"/logo.svg"} alt="Logo Plast-Fol" 
+                                height={"100%"}
+                                width={"auto"}
+                            />
                         </a>
                         <div style={{paddingLeft: "1em"}}>
                             P.P.H.U. PLAST-FOL s.c<br />

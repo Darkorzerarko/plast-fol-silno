@@ -17,7 +17,10 @@ export default function NavBar({quote, children, height}){
             <div className={styles.nav__content}>
                 <div className={styles.logo}>
                     <a href={nextConfig.basePath} alt="Strona główna">
-                        <img src={nextConfig.basePath+"/logo.svg"} alt='Logo Plast-Fol'/>
+                        <img src={nextConfig.basePath+"/logo.svg"} alt='Logo Plast-Fol'
+                            height={"100%"}
+                            width={"auto"}
+                        />
                     </a>
                 </div>
                 <div className={styles.nav_big}>
