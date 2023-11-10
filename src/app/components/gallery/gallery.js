@@ -54,12 +54,15 @@ export default function Gallery(){
 
                     <div className={styles.gallery_img_wrapper}>
                         <Image 
-                            src={nextConfig.basePath+"/gallery-"+image+"-half-res2.jpg"}
+                            src={nextConfig.basePath+"/gallery-"+image+"-big.webp"}
                             alt={imageAlt[image-1]}
                             width="10000"
                             height="10000"  
                             className={styles.gallery_img}
                             onLoadingComplete={() =>{
+                                document.getElementById("x").remove()
+                            }}
+                            onError={()=>{
                                 document.getElementById("x").remove()
                             }}
                         />

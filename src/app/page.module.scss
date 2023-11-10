@@ -11,14 +11,7 @@
         .company_age_graphic{
             display: flex;
             justify-content: center;
-            // width: clamp(1em, 30%, 40%);
-            // font-family: 'anton', 'fantasy', sans-serif;
 
-            @font-face {
-                font-family: "Anton";
-                src: url("/plast-fol-silno/fonts/Anton-Regular.ttf");
-            }
-            font-family: "Anton", sans-serif;
             background-color: $pakistan-green;
             background-image: url("/plast-fol-silno/age-bg.webp");
             background-size: cover;

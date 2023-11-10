@@ -49,10 +49,10 @@
 
     @for $i from 1 through 4 {
         #img_#{$i} { 
-            background-image: url("/plast-fol-silno/gallery-#{$i}-half-res3.jpg");
+            background-image: url("/plast-fol-silno/gallery-#{$i}-small.webp");
             transition: background-size 0.3s ease;
             &:hover {
-                background: linear-gradient(rgba(0, 0, 0, 0.20), rgba($pakistan-green, 0.40)), url("/plast-fol-silno/gallery-#{$i}-half-res3.jpg");
+                background: linear-gradient(rgba(0, 0, 0, 0.20), rgba($pakistan-green, 0.40)), url("/plast-fol-silno/gallery-#{$i}-small.webp");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: 110%; 

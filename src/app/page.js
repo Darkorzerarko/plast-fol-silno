@@ -9,6 +9,12 @@ import Footer from './components/footer/footer';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import { TbMessageCircleQuestion } from 'react-icons/tb'
 
+import { Anton } from 'next/font/google';
+const anton = Anton({
+  subsets: ['latin'],
+  weight: '400' 
+})
+
 export default function Home() {
 
   return (
@@ -22,7 +28,7 @@ export default function Home() {
 
         <div className={styles.company_age_wrapper}>
           <div className={styles.company_age}>
-            <div className={styles.company_age_graphic}><CompanyAge/></div>
+            <div className={[styles.company_age_graphic, anton.className].join(' ')}><CompanyAge/></div>
             <div className={styles.company_age_description}>
               <div className={styles.top}>
                 O NAS
