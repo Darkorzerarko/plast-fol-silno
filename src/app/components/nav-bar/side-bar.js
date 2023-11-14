@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react'
-import nextConfig from '../../../../next.config'
+import Link from 'next/link'
 import styles from './nav-bar.module.scss'
 import {TiThMenu} from "react-icons/ti"
 import { AiFillCloseCircle, AiOutlineHome} from 'react-icons/ai'
@@ -16,18 +16,28 @@ export default function SideNavBar(){
 
     return (
         <>
-            <button onClick={() => {setSideBarVisibility(!sideBarVisibility)}}>
+            <button onClick={() => {setSideBarVisibility(!sideBarVisibility)}}
+                style={sideBarVisibility?{
+                    // position: 'sticky',
+                    // top: "10%"
+                }:{
+                    // position: 'static'
+                }}
+            >
                 {sideBarVisibility?<AiFillCloseCircle/>:<TiThMenu />}
             </button>
             <div className={styles.nav_small_dropdown} style={sideBarVisibility? {
-                    display: "flex"
+                    left: "0"
                 }:{
-                    display: "none"
+                    left: "-80%"
+                    
                 }}>
-                <a href={nextConfig.basePath+'/'} tabIndex="0"><AiOutlineHome /> Strona Główna</a>
-                <a href={nextConfig.basePath+'/o-nas'} tabIndex="0"><GrCircleInformation /> O nas</a>   
-                <a href={nextConfig.basePath+'/oferta'} tabIndex="0"><MdOutlineLocalOffer /> Oferta</a>
-                <a href={nextConfig.basePath+'/kontakt'} tabIndex="0"><HiPhone /> Kontakt</a>
+                <div className={styles.nav_small_links}>
+                    <Link href='/'><AiOutlineHome /> Strona Główna</Link>
+                    <Link href='/o-nas' ><GrCircleInformation /> O nas</Link>   
+                    <Link href='/oferta' ><MdOutlineLocalOffer /> Oferta</Link>
+                    <Link href='/kontakt' ><HiPhone /> Kontakt</Link>
+                </div>
             </div>
         </>
 

@@ -4,6 +4,7 @@
     position: absolute;
     bottom: 0;
 
+    // height: 20rem;
     width: 100vw;
 
     background-color: $dark-green;
@@ -12,22 +13,25 @@
     .footer_wrapper {
         @include resp-c-60w(1600px);
         display: block;
+        height: inherit;
         .footer_top {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            // height: 90%;
             .company_logo_name {
                 height: 4em;
                 padding-left: 5%;
                 display: flex;
                 align-items: center;
                 .logo {
-                    height: 80%;
                     display: flex;
                     align-items: center;
+                    height: 80%;
                     img {
                         height: 100%;
+                        width: auto;
                     }
                 }
             }
@@ -63,6 +67,7 @@
 
         .author {
             text-align: center;
+            // height: 2rem;
             padding: 1em;
             font-size: 0.7rem;
             a {

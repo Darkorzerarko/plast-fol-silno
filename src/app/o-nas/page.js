@@ -8,6 +8,7 @@ import NavBar from '../components/nav-bar/nav-bar';
 import CompanyAge from '../components/company-age/company-age'
 import Footer from '../components/footer/footer';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import aboutUs1 from "../../../public/about-us1.webp"
 
@@ -83,7 +84,7 @@ export default function AboutUs() {
               <h2>Recykling i produkcja</h2>
               Wytworzony podczas recyklingu regranulat używany jest do wytwarzania foli LDPE, która jest głównym elementem naszej produkcji. 
               Z niej tworzy się następnie taśmy, rękawy czy worki.
-              <a href={nextConfig.basePath+"/oferta"}>Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></a>
+              <Link href="/oferta">Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></Link>
 
             </div>
           </div>

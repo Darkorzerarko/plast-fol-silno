@@ -1,21 +1,17 @@
 @import "../../variables.scss";
 
-
-
 .nav {
-    position: relative;
+    // position: relative;
     width: 100vw;
     height: 40em;
-    
-    transition: height .6s ease-in-out;
+
+    transition: height 0.6s ease-in-out;
 }
 
 .nav__background {
     position: absolute;
-    top: 0;
 
     width: 100vw;
-    height: 100%;
     margin: auto;
 
     background-image: url("/plast-fol-silno/nav-bar-bg.webp");
@@ -24,36 +20,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: -2;
+    z-index: -3;
 
-    transition: height .6s ease-in-out;
+    transition: height 0.6s ease-in-out;
 }
 
 .nav__background__blend {
-
-    // position: absolute;
-    // top: 0;
-
     mix-blend-mode: multiply;
-
     background-color: rgba(0, 128, 0, 0.7);
-    
-    // background: linear-gradient(180deg, rgba(0,128,0,1) 0%, rgba(9,56,36,1) 100%);
-    background: linear-gradient(180deg, rgb(0, 216, 0) 0%, rgba(9,56,36,1) 100%);
-    // background: linear-gradient(180deg, rgb(0, 172, 0) 0%, rgba(9,56,36,1) 100%);
-
+    background: linear-gradient(180deg, rgb(0, 216, 0) 0%, rgba(9, 56, 36, 1) 100%);
     width: 100%;
     height: 100%;
-    
-
     z-index: -1;
-
 }
 
-.nav__content{
-
+.nav__content {
     @include resp-c-60w(1600px);
-    @media only screen and (max-width: 1300px ) {
+    @media only screen and (max-width: 1300px) {
         width: 90%;
     }
     align-items: center;
@@ -62,15 +45,22 @@
     height: 20%;
     height: 8rem;
     z-index: 1;
-    
-    
-    .logo{
+
+    .logo {
         display: flex;
-        align-content: center;
+        // align-content: center;
         height: 80%;
+        img {
+            height: 100%;
+            width: auto;
+        }
     }
 
-    .nav_big{
+    .nav_big {
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
         display: flex;
         align-items: center;
         a {
@@ -81,97 +71,95 @@
             color: white;
             // background-color: rgb($pakistan-green, .8);
             svg {
-                padding-right: .4rem;
+                padding-right: 0.4rem;
                 scale: 1.3;
                 // height: 30px;
                 path {
                     stroke: white;
                 }
             }
-            &:focus, &:hover {
-                background-color: rgb($mint-cream, .4);
+            &:focus,
+            &:hover {
+                background-color: rgb($mint-cream, 0.4);
             }
         }
-        @media only screen and (max-width: 900px){
+        @media only screen and (max-width: 900px) {
             display: none;
         }
     }
-    
-    .nav_small{
 
-        *{
-            transition: all .3s ease-in-out;
+    .nav_small {
+        * {
+            transition: all 0.3s ease-in-out;
         }
 
         display: none;
         padding-right: 5%;
-        button{
-            
+        button {
             @include clear-button;
-            svg{
+            svg {
                 scale: 3;
                 fill: white;
-                &:hover, &:focus-within{
+                &:hover,
+                &:focus-within {
                     scale: 4;
                 }
             }
-            
         }
-        @media only screen and (max-width: 900px){
+        @media only screen and (max-width: 900px) {
             display: block;
         }
         z-index: 100;
-    }
-        
-    .nav_small_dropdown{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: -80%;
-        width: 80%;
 
-        z-index: 99;
-        height: 100%;
-        background-color: rgb($pakistan-green, 1);
-        transition: all .3s ease-in-out;
-        
-        a{
+        .nav_small_dropdown {
             display: flex;
-            align-items: center;
-            padding: .4em;  
-            color: white;
-            font-size: 1.5rem;
+            // justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: -80%;
             width: 80%;
-            margin: auto;
-            border-bottom: solid white 2px;
-            
-            &:focus, &:hover {
-                background-color: rgb($mint-cream, .4);
-            }
-            svg {
-                padding-right: .4rem;
-                path {
-                    stroke: white;
+
+            z-index: 99;
+            height: 100%;
+            background-color: rgb($pakistan-green, 0.5);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease-in-out;
+
+            .nav_small_links {
+                position: sticky;
+                top: 10%;
+                a {
+                    display: flex;
+                    align-items: center;
+                    padding: 0.4em;
+                    color: white;
+                    font-size: 1.5rem;
+                    width: 80%;
+                    margin: 0 auto;
+                    border-bottom: solid white 2px;
+
+                    &:focus,
+                    &:hover {
+                        background-color: rgb($mint-cream, 0.4);
+                    }
+                    svg {
+                        padding-right: 0.4rem;
+                        path {
+                            stroke: white;
+                        }
+                    }
                 }
             }
-        }   
-
-        animation: slide 0.5s forwards;
-
-        @keyframes slide {
-            100% { left: 0; }
         }
     }
 }
 
-.quote{
+.quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 2em;
-    // align-items: center;
 
     height: calc(100% - 8rem);
     width: clamp(10px, 45%, 2000px);
@@ -190,34 +178,33 @@
 //     color: white;
 // }
 
-.additional{
+.additional {
     // display: flex;
     // justify-content: center;
     // align-items: center;
     // height: calc(20%);
     color: white;
-    font-size: .5em;
+    font-size: 0.5em;
 }
 
 // MEDIA QUERIES
 
-
-
-@media only screen and (max-width: 1000px){
-
-    .nav, .nav__background{
+@media only screen and (max-width: 1000px) {
+    .nav,
+    .nav__background {
         height: 25rem;
-        transition: height .6s ease-in-out;
+        transition: height 0.6s ease-in-out;
     }
 
-    .quote__alone, .quote{
+    .quote__alone,
+    .quote {
         font-size: 1.5rem;
         width: 90%;
     }
 }
 
-@media only screen and (max-width: 900px){
-    .nav_big{
+@media only screen and (max-width: 900px) {
+    .nav_big {
         display: none;
     }
 }

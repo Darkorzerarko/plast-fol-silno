@@ -1,10 +1,13 @@
 import styles from "./footer.module.scss"
-import nextConfig from "../../../../next.config"
-
 import { AiOutlineHome} from 'react-icons/ai'
 import { GrCircleInformation } from "react-icons/gr"
 import { HiPhone } from "react-icons/hi"
 import { MdOutlineLocalOffer } from "react-icons/md"
+import Link from "next/link"
+import Image from "next/image"
+
+import logo from '../../../../public/logo.svg'
+
 
 export default function Footer(){
 
@@ -14,22 +17,22 @@ export default function Footer(){
             <div className={styles.footer_wrapper}>
                 <div className={styles.footer_top}>
                     <div className={styles.company_logo_name}>
-                        <a href="/" alt="Strona główna" className={styles.logo}>
-                            <img src={nextConfig.basePath+"/logo.svg"} alt="Logo Plast-Fol" 
-                                height={"100%"}
-                                width={"auto"}
+                        <Link href={"/"} className={styles.logo}>
+                            <Image 
+                                src={logo}
+                                alt='Logo Plast-Fol'
                             />
-                        </a>
+                        </Link>
                         <div style={{paddingLeft: "1em"}}>
                             P.P.H.U. PLAST-FOL s.c<br />
                             Mariusz i Artur Rzeźnik
                         </div>
                     </div>
                     <div className={styles.bottom_nav}>
-                        <a href={nextConfig.basePath+'/'} tabIndex="0"><AiOutlineHome /> Strona Główna</a>
-                        <a href={nextConfig.basePath+'/o-nas'} tabIndex="0"><GrCircleInformation /> O nas</a>   
-                        <a href={nextConfig.basePath+'/oferta'} tabIndex="0"><MdOutlineLocalOffer /> Oferta</a>
-                        <a href={nextConfig.basePath+'/kontakt'} tabIndex="0"><HiPhone /> Kontakt</a>
+                        <Link href='/'><AiOutlineHome /> Strona Główna</Link>
+                        <Link href='/o-nas' ><GrCircleInformation /> O nas</Link>   
+                        <Link href='/oferta' ><MdOutlineLocalOffer /> Oferta</Link>
+                        <Link href='/kontakt' ><HiPhone /> Kontakt</Link>
                     </div>
                 </div>
                 

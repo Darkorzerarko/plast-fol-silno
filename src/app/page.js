@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <>
-      <NavBar quote={"Folie i Worki Foliowe na Miarę Twoich Potrzeb"}>
+      <NavBar quote={"Folie i Worki Foliowe na Miarę Twoich Potrzeb"} height={"40rem"}>
         
         Producent foli i opakowań foliowych <br />P.P.H.U. PLAST-FOL s.c Mariusz i Artur Rzeźnik
       </NavBar>
