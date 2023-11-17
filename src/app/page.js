@@ -85,7 +85,6 @@ export default function Home() {
           Tu jesteśmy
         </LocationEmbeded>
       </div>  
-      <CookiesAgreement/>
       <Footer />
     </>
   )
