@@ -2,6 +2,8 @@ import Script from "next/script"
 import styles from './page.module.scss'
 
 import NavBar from "../components/nav-bar/nav-bar"
+import CookiesAgreement from "../components/cookies-management/cookies_agreement"
+
 import Footer from "../components/footer/footer"
 
 export default function Oferta(){
@@ -205,6 +207,7 @@ export default function Oferta(){
                     </div>
                 </div>
             </div>
+            <CookiesAgreement/>
             <Footer />
         </>
     )

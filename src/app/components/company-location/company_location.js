@@ -2,6 +2,7 @@ import styles from "./company_location.module.scss"
 import {TbMap2} from "react-icons/tb"
 import {CgSpinner} from "react-icons/cg"
 
+
 export default function LocationEmbeded({children}) {
 
     return (

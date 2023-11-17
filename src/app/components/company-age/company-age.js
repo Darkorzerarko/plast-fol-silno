@@ -1,3 +1,5 @@
+'use client'
+
 export default function CompanyAge(){
 
     const foundingDate = new Date(2005, 4, 2);

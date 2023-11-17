@@ -1,6 +1,7 @@
 import styles from './page.module.scss'
 
 import NavBar from "../components/nav-bar/nav-bar"
+import CookiesAgreement from '../components/cookies-management/cookies_agreement'
 import Footer from "../components/footer/footer"
 import LocationEmbeded from '../components/company-location/company_location'
 
@@ -48,6 +49,7 @@ export default function Kontakt(){
                     Znajdź nas na mapie
                 </LocationEmbeded>
             </div>
+            <CookiesAgreement/>
             <Footer />
         </>
     )

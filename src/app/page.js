@@ -5,6 +5,7 @@ import NavBar from './components/nav-bar/nav-bar'
 import CompanyAge from './components/company-age/company-age';
 import Gallery from './components/gallery/gallery';
 import LocationEmbeded from './components/company-location/company_location';
+import CookiesAgreement from './components/cookies-management/cookies_agreement';
 import Footer from './components/footer/footer';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import { TbMessageCircleQuestion } from 'react-icons/tb'
@@ -84,6 +85,7 @@ export default function Home() {
           Tu jesteśmy
         </LocationEmbeded>
       </div>  
+      <CookiesAgreement/>
       <Footer />
     </>
   )

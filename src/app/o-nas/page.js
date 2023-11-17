@@ -1,11 +1,11 @@
 import styles from './page.module.scss'
 
 import { MdRecycling, MdOutlineVerifiedUser } from "react-icons/md"
-import nextConfig from '../../../next.config';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 
 import NavBar from '../components/nav-bar/nav-bar';
 import CompanyAge from '../components/company-age/company-age'
+import CookiesAgreement from '../components/cookies-management/cookies_agreement';
 import Footer from '../components/footer/footer';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -57,7 +57,6 @@ export default function AboutUs() {
               src={aboutUs1}
               alt="Starannie zapakowane rolki z folią"
               fill={true}
-              placeholder="blur"
             />
           </div>
           <h2>Folie i Worki Foliowe na Miarę Twoich Potrzeb</h2>
@@ -90,6 +89,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>  
+      <CookiesAgreement/>
       <Footer />
     </>
   )
