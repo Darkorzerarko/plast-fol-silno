@@ -53,7 +53,7 @@ export default function AboutUs() {
 
         <div className={styles.about_us_img}>
           <div className={styles.image_wrapper}>
-            <Image 
+            <img
               src={aboutUs1}
               alt="Starannie zapakowane rolki z folią"
               fill={true}
