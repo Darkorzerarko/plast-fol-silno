@@ -5,11 +5,12 @@ export const metadata = {
     keywords: ["PLAST-FOL", "Plast-Fol", "plast-fol", "plastfol", "recykling", "folia", "worki foliowe", "kontakt"],
     creator: "Dariusz Rzeźnik",
   
-    viewport: {
-      width: 'device-width',
-      initialScale: 1,
-      maximumScale: 2,
-    },
+  }
+
+  export const viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 2,
   }
   
   export default function KontaktLayout({ children }) {
