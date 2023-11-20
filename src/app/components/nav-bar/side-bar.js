@@ -23,7 +23,6 @@ export default function SideNavBar(){
                 }:{
                     // position: 'static'
                 }}
-                aria-label="Przycisk menu nawigacji"
             >
                 {sideBarVisibility?<AiFillCloseCircle/>:<TiThMenu />}
             </button>
