@@ -57,7 +57,6 @@ export default function AboutUs() {
               src={aboutUs1}
               alt="Starannie zapakowane rolki z folią"
               fill={true}
-              placeholder="blur"
             />
           </div>
           <h2>Folie i Worki Foliowe na Miarę Twoich Potrzeb</h2>
