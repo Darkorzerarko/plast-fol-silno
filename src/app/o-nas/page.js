@@ -1,7 +1,6 @@
 import styles from './page.module.scss'
 
 import { MdRecycling, MdOutlineVerifiedUser } from "react-icons/md"
-import nextConfig from '../../../next.config';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 
 import NavBar from '../components/nav-bar/nav-bar';
@@ -57,7 +56,6 @@ export default function AboutUs() {
               src={aboutUs1}
               alt="Starannie zapakowane rolki z folią"
               fill={true}
-              placeholder="blur"
             />
           </div>
           <h2>Folie i Worki Foliowe na Miarę Twoich Potrzeb</h2>
