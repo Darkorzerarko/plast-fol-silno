@@ -17,12 +17,7 @@ export default function SideNavBar(){
     return (
         <>
             <button onClick={() => {setSideBarVisibility(!sideBarVisibility)}}
-                style={sideBarVisibility?{
-                    // position: 'sticky',
-                    // top: "10%"
-                }:{
-                    // position: 'static'
-                }}
+                aria-label="Przycisk menu nawigacji"
             >
                 {sideBarVisibility?<AiFillCloseCircle/>:<TiThMenu />}
             </button>
