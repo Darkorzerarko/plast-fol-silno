@@ -1,4 +1,4 @@
-import SideNavBar from './side-bar'
+// import SideNavBar from './side-bar'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './nav-bar.module.scss'
@@ -32,7 +32,7 @@ export default function NavBar({quote, children, height}){
                     <Link href='/kontakt' ><HiPhone /> Kontakt</Link>
                 </div>
                 <div className={styles.nav_small}>
-                    <SideNavBar />
+                    {/* <SideNavBar /> */}
                 </div>
             </div>
             <div className={styles.quote}>

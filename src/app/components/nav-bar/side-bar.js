@@ -9,12 +9,12 @@
 // import {HiPhone} from "react-icons/hi"
 // import { MdOutlineLocalOffer } from "react-icons/md"
 
-// export default function SideNavBar(){
+export default function SideNavBar(){
 
 //     const [sideBarVisibility, setSideBarVisibility] = useState(false)
 
 
-//     return (
+    return (
 //         <>
 //             <button onClick={() => {setSideBarVisibility(!sideBarVisibility)}}
 //                 aria-label="Przycisk menu nawigacji"
@@ -36,6 +36,8 @@
 //             </div>
 //         </>
 
-
-//     )
-// }
+        <>
+        .
+        </>
+    )
+}
