@@ -32,7 +32,7 @@ export default function NavBar({quote, children, height}){
                     <Link href='/kontakt' ><HiPhone /> Kontakt</Link>
                 </div>
                 <div className={styles.nav_small}>
-                    {/* <SideNavBar /> */}
+                    <SideNavBar />
                 </div>
             </div>
             <div className={styles.quote}>

@@ -1,7 +1,6 @@
 import styles from './page.module.scss'
 
 import { MdRecycling, MdOutlineVerifiedUser } from "react-icons/md"
-import nextConfig from '../../../next.config';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 
 import NavBar from '../components/nav-bar/nav-bar';
