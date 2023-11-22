@@ -1,12 +1,22 @@
 import Script from "next/script"
+import Image from "next/image"
 import styles from './page.module.scss'
 
 import NavBar from "../components/nav-bar/nav-bar"
 import CookiesAgreement from "../components/cookies-management/cookies-agreement"
 import Footer from "../components/footer/footer"
 
-export default function Oferta(){
+// SVG oferty
+import tasma from '../../../public/oferta/tasma.svg'
+import rekaw from '../../../public/oferta/rekaw.svg'
+import rekaw_z from '../../../public/oferta/rekaw_z.svg'
+import p_rekaw from '../../../public/oferta/p_rekaw.svg'
+import p_rekaw_z from '../../../public/oferta/p_rekaw_z.svg'
+import worek from '../../../public/oferta/worek.svg'
+import worek_z from '../../../public/oferta/worek_z.svg'
 
+
+export default function Oferta(){
 
     return (
         <>
@@ -20,9 +30,7 @@ export default function Oferta(){
                     </div>
                 </div>
 
-
                 <div className={styles.products_wrapper}>
-
                     <div className={styles.products_categories_wrapper}>
                         <div className={styles.products_categories}>
                             <div className={styles.category_separator}></div>
@@ -82,7 +90,7 @@ export default function Oferta(){
                             <div className={styles.product_anchor} id="targetTasma"></div>
                             <div className={styles.product}>
                                 <div className={styles.product_graphic}>
-                                    <img src="./oferta/tasma.svg" alt="Graficzna reprezentacja Taśmy foliowej" />
+                                    <Image src={tasma} alt="Graficzna reprezentacja Taśmy foliowej" />
                                 </div>
                                 <div className={styles.product_description}>
                                     <h1>Taśma</h1>
@@ -109,8 +117,8 @@ export default function Oferta(){
                             <div className={styles.product_anchor} id="targetRekaw"></div>
                             <div className={styles.product}>
                                 <div className={styles.product_graphic} style={{justifyContent: "space-around"}}>
-                                    <img src="./oferta/rekaw.svg" alt="Graficzna reprezentacja Rękawa foliowego" />
-                                    <img src="./oferta/rekaw_z.svg" alt="Graficzna reprezentacja Rękawa foliowego z zakładkami" />
+                                    <Image src={rekaw} alt="Graficzna reprezentacja Rękawa foliowego" />
+                                    <Image src={rekaw_z} alt="Graficzna reprezentacja Rękawa foliowego z zakładkami" />
                                 </div>
                                 <div className={styles.product_description}>
                                     <h1>Rękaw i Rękaw z zakładkami</h1>
@@ -142,8 +150,8 @@ export default function Oferta(){
                             <div className={styles.product_anchor} id="targetPRekaw"></div>
                             <div className={styles.product}>
                                 <div className={styles.product_graphic} style={{justifyContent: "space-around"}}>
-                                    <img src="./oferta/p_rekaw.svg" alt="Graficzna reprezentacja Rękawa foliowego" />
-                                    <img src="./oferta/p_rekaw_z.svg" alt="Graficzna reprezentacja Rękawa foliowego z zakładkami" />
+                                    <Image src={p_rekaw} alt="Graficzna reprezentacja Rękawa foliowego" />
+                                    <Image src={p_rekaw_z} alt="Graficzna reprezentacja Rękawa foliowego z zakładkami" />
                                 </div>
                                 <div className={styles.product_description}>
                                     <h1>Półrękaw i Półrękaw z zakładkami</h1>
@@ -175,8 +183,8 @@ export default function Oferta(){
                             <div className={styles.product_anchor} id="targetWorek"></div>
                             <div className={styles.product}>
                                 <div className={styles.product_graphic} style={{justifyContent: "space-around"}}>
-                                    <img src="./oferta/worek.svg" alt="Graficzna reprezentacja Rękawa foliowego" />
-                                    <img src="./oferta/worek_z.svg" alt="Graficzna reprezentacja Rękawa foliowego z zakładkami" />
+                                    <Image src={worek} alt="Graficzna reprezentacja Rękawa foliowego" />
+                                    <Image src={worek_z} alt="Graficzna reprezentacja Rękawa foliowego z zakładkami" />
                                 </div>
                                 <div className={styles.product_description}>
                                     <h1>Worki i Worki z zakładkami</h1>
