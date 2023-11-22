@@ -56,28 +56,28 @@ export default function Oferta(){
                     <div className={styles.products_elements_wrapper}>
                         <Script >
                             {`
-                                const targetTasma = document.getElementById("targetTasma");
+                                let targetTasma = document.getElementById("targetTasma");
                                 document.getElementById('tasma').addEventListener('click', function() {
                                     if(targetTasma) {
                                         targetTasma.scrollIntoView({ behavior: 'smooth' })
                                     }
                                 });
                                 
-                                const targetRekaw = document.getElementById("targetRekaw");
+                                let targetRekaw = document.getElementById("targetRekaw");
                                 document.getElementById('rekaw').addEventListener('click', function() {
                                     if(targetRekaw) {
                                         targetRekaw.scrollIntoView({ behavior: 'smooth' })                                      
                                     }
                                 });
 
-                                const targetPRekaw = document.getElementById("targetPRekaw");
+                                let targetPRekaw = document.getElementById("targetPRekaw");
                                 document.getElementById('prekaw').addEventListener('click', function() {
                                     if(targetPRekaw) {
                                         targetPRekaw.scrollIntoView({ behavior: 'smooth' })                                      
                                     }
                                 });
 
-                                const targetWorek = document.getElementById("targetWorek");
+                                let targetWorek = document.getElementById("targetWorek");
                                 document.getElementById('worek').addEventListener('click', function() {
                                     if(targetWorek) {
                                         targetWorek.scrollIntoView({ behavior: 'smooth' })                                      

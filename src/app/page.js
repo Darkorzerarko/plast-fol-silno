@@ -1,5 +1,4 @@
 import styles from './page.module.scss'
-import nextConfig from '../../next.config';
 
 import NavBar from './components/nav-bar/nav-bar'
 import CompanyAge from './components/company-age/company-age';
@@ -11,6 +10,7 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import { TbMessageCircleQuestion } from 'react-icons/tb'
 
 import { Anton } from 'next/font/google';
+import Link from 'next/link';
 const anton = Anton({
   subsets: ['latin'],
   weight: '400' 
@@ -39,7 +39,7 @@ export default function Home() {
                 Firma Plast-Fol ma swoje korzenie w malowniczym Silnie, położonym w województwie pomorskim. 
                 Z każdym rokiem nasza firma udowadnia, że przyszłość przemysłu może być bardziej ekologiczna i odpowiedzialna.
               </div>
-              <a href={nextConfig.basePath+"/o-nas"}>Dowiedz się więcej <BsFillArrowRightCircleFill /></a>
+              <Link href="/o-nas">Dowiedz się więcej <BsFillArrowRightCircleFill /></Link>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
                   <li>Worki foliowe</li>
                 </ul>
               </div>
-              <a href={nextConfig.basePath+"/oferta"}>Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></a>
+              <Link href="/oferta">Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></Link>
             </div>
             <Gallery />
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
               </h1>
               a może<br/>
               <h1>Masz pytanie?</h1>
-              <a href={nextConfig.basePath+"/kontakt"}>Skontaktuj się z nami <BsFillArrowRightCircleFill /></a>
+              <Link href="/kontakt">Skontaktuj się z nami <BsFillArrowRightCircleFill /></Link>
             </div>
             <TbMessageCircleQuestion className={styles.contact_svg}/>
           </div>
