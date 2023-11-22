@@ -5,6 +5,7 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 
 import NavBar from '../components/nav-bar/nav-bar';
 import CompanyAge from '../components/company-age/company-age'
+import CookiesAgreement from '../components/cookies-management/cookies-agreement';
 import Footer from '../components/footer/footer';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -88,6 +89,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>  
+      <CookiesAgreement/>
       <Footer />
     </>
   )
