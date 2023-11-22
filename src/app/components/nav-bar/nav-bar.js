@@ -1,4 +1,4 @@
-// import SideNavBar from './side-bar'
+import SideNavBar from './side-bar'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './nav-bar.module.scss'
