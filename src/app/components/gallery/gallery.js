@@ -54,7 +54,7 @@ export default function Gallery(){
 
                     <div className={styles.gallery_img_wrapper}>
                         <Image 
-                            src={nextConfig.basePath+"/gallery-"+image+"-big.webp"}
+                            src={"/gallery-"+image+"-big.webp"}
                             alt={imageAlt[image-1]}
                             width="10000"
                             height="10000"  
