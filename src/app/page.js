@@ -33,7 +33,7 @@ export default function Home() {
             <div className={styles.company_age_description}>
               <div className={styles.top}>
                 O NAS
-                <h1><CompanyAge/> lat doświadczenia</h1>  
+                <h2><CompanyAge/> lat doświadczenia</h2>  
               </div>
               <div className={styles.bottom}>
                 Firma Plast-Fol ma swoje korzenie w malowniczym Silnie, położonym w województwie pomorskim. 
@@ -48,7 +48,7 @@ export default function Home() {
           <div className={styles.company_activities}>
             <div className={styles.company_activities_description}>
               <div className={styles.top}>
-                <h1>Profil Działalności</h1>
+                <h2>Profil Działalności</h2>
               </div>
               <div className={styles.bottom}>
                 Do produkcji naszych produktów używamy własnoręcznie wytworzonego regranulatu <b>LDPE</b>.
@@ -70,11 +70,11 @@ export default function Home() {
         <div className={styles.contact_wrapper}>
           <div className={styles.contact}>
             <div className={styles.contact_data}>
-              <h1>
+              <h2>
                 Zainteresowany?<br />
-              </h1>
+              </h2>
               a może<br/>
-              <h1>Masz pytanie?</h1>
+              <h2>Masz pytanie?</h2>
               <Link href="/kontakt">Skontaktuj się z nami <BsFillArrowRightCircleFill /></Link>
             </div>
             <TbMessageCircleQuestion className={styles.contact_svg}/>

@@ -7,7 +7,7 @@ export default function LocationEmbeded({children}) {
     return (
         <div className={styles.location}>
             <div className={styles.location_wrapper}>
-                <h1>{children}</h1>
+                <h2>{children}</h2>
                 <div className={styles.map_loading_icon}>
                     <TbMap2 />
                 </div>

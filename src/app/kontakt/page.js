@@ -12,12 +12,12 @@ export default function Kontakt(){
 
     return (
         <>
-            <NavBar quote={"KONTAKT"} height={"25rem"}></NavBar>
+            <NavBar quote={"Kontakt"} height={"25rem"}></NavBar>
             <div className={styles.content}>
                 <div className={styles.contact}>
                     <div className={styles.contact_wrapper}>
                         <div className={styles.contact_address}>
-                            <h1>Siedziba firmy</h1> 
+                            <h2>Siedziba firmy</h2> 
                             <div className={styles.address}>
                                 <MdPlace />
                                 <div>
@@ -32,13 +32,13 @@ export default function Kontakt(){
                         </div> 
                         <div className={styles.contact_separator}></div>
                         <div className={styles.contact_data}>
-                            <h1>Dane kontaktowe</h1>
-                            <h2>Biuro</h2>
+                            <h2>Dane kontaktowe</h2>
+                            <h3>Biuro</h3>
                             <a href='tel:52 398 76 32' ><HiPhone /> 52 398 76 32 </a><br />
                             <a href='mailto: plastfol.silno@gmail.com' ><MdMailOutline /> plastfol.silno@gmail.com </a>
-                            <h2>Artur Rzeźnik</h2>
+                            <h3>Artur Rzeźnik</h3>
                             <a href='tel:608 444 259' ><HiPhone /> 608 444 259<br /></a>
-                            <h2>Mariusz Rzeźnik</h2>
+                            <h3>Mariusz Rzeźnik</h3>
                             <a href='tel:602 391 918' ><HiPhone /> 602 391 918</a><br />
                             <a href='mailto: mariusz.rz@op.pl' ><MdMailOutline /> mariusz.rz@op.pl </a>
                         </div>

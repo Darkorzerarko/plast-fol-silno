@@ -22,10 +22,10 @@ export default function AboutUs() {
       
       <div className={styles.content}>
         <div className={styles.company_information_wrapper}>
-          <h1>
+          <h2>
             Producent foli i opakowań foliowych<br/>
             P.P.H.U. PLAST-FOL s.c Mariusz i Artur Rzeźnik
-          </h1>
+          </h2>
           <div className={styles.company_information}>
             <div className={styles.left}>
               Istniejemy na rynku od 2 maja 2005 roku. Od ponad <CompanyAge /> lat działalności specjalizujemy się w wytwarzaniu produktów z tworzywa <b>LDPE</b>. 
@@ -64,7 +64,7 @@ export default function AboutUs() {
         </div>
 
         <div className={styles.about_us_wrapper}>
-          <h1>Historia</h1>
+          <h2>Historia</h2>
           Firma powstała jako wynik połączenia pasji i zaangażowania dwóch braci.
           Początkowo skupiała się na produkcji wyrobów foliowych z gotowych tworzyw sztucznych. 
           Jednak z upływem czasu w miarę rosnącej świadomości ekologicznej, zrozumienie potrzeby zrównoważonego rozwoju stało się oczywiste. <br /><br />

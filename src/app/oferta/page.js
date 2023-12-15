@@ -24,9 +24,9 @@ export default function Oferta(){
             <div className={styles.content}>
                 <div className={styles.greeting_wrapper}>
                     <div className={styles.greeting}>
-                        <h1>
+                        <h2>
                             Poznaj naszą ofertę produkcyjną
-                        </h1>
+                        </h2>
                     </div>
                 </div>
 
@@ -93,13 +93,13 @@ export default function Oferta(){
                                     <Image src={tasma} alt="Graficzna reprezentacja Taśmy foliowej" />
                                 </div>
                                 <div className={styles.product_description}>
-                                    <h1>Taśma</h1>
-                                    <h2>Dostępne wymiary:</h2>
+                                    <h2>Taśma</h2>
+                                    <h3>Dostępne wymiary:</h3>
                                     <ul>
                                         <li>Szerokość taśmy: 300mm - 2500mm</li>
                                         <li>Grubość: 0,04mm - 0,2mm</li>
                                     </ul>
-                                    <h2>Dostępne kolory:</h2>
+                                    <h3>Dostępne kolory:</h3>
                                     <ul>
                                         <li>"słomka" (bezbarwny)</li>
                                         <li>biały (mleczny)</li>
@@ -121,8 +121,8 @@ export default function Oferta(){
                                     <Image src={rekaw_z} alt="Graficzna reprezentacja Rękawa foliowego z zakładkami" />
                                 </div>
                                 <div className={styles.product_description}>
-                                    <h1>Rękaw i Rękaw z zakładkami</h1>
-                                    <h2>Dostępne wymiary:</h2>
+                                    <h2>Rękaw i Rękaw z zakładkami</h2>
+                                    <h3>Dostępne wymiary:</h3>
                                     <ul>
                                         <li>Szerokość rękawa: 300mm - 2500mm</li>
                                         <div className={styles.additional}>
@@ -132,7 +132,7 @@ export default function Oferta(){
                                         </div>
                                         <li>Grubość: 0,04mm - 0,2mm</li>
                                     </ul>
-                                    <h2>Dostępne kolory:</h2>
+                                    <h3>Dostępne kolory:</h3>
                                     <ul>
                                         <li>"słomka" (bezbarwny)</li>
                                         <li>biały (mleczny)</li>
@@ -154,8 +154,8 @@ export default function Oferta(){
                                     <Image src={p_rekaw_z} alt="Graficzna reprezentacja Rękawa foliowego z zakładkami" />
                                 </div>
                                 <div className={styles.product_description}>
-                                    <h1>Półrękaw i Półrękaw z zakładkami</h1>
-                                    <h2>Dostępne wymiary:</h2>
+                                    <h2>Półrękaw i Półrękaw z zakładkami</h2>
+                                    <h3>Dostępne wymiary:</h3>
                                     <ul>
                                         <li>Szerokość rękawa: 300mm - 2500mm</li>
                                         <div className={styles.additional}>
@@ -165,7 +165,7 @@ export default function Oferta(){
                                         </div>
                                         <li>Grubość: 0,04mm - 0,2mm</li>
                                     </ul>
-                                    <h2>Dostępne kolory:</h2>
+                                    <h3>Dostępne kolory:</h3>
                                     <ul>
                                         <li>"słomka" (bezbarwny)</li>
                                         <li>biały (mleczny)</li>
@@ -187,8 +187,8 @@ export default function Oferta(){
                                     <Image src={worek_z} alt="Graficzna reprezentacja Rękawa foliowego z zakładkami" />
                                 </div>
                                 <div className={styles.product_description}>
-                                    <h1>Worki i Worki z zakładkami</h1>
-                                    <h2>Dostępne wymiary:</h2>
+                                    <h2>Worki i Worki z zakładkami</h2>
+                                    <h3>Dostępne wymiary:</h3>
                                     <ul>
                                         <li>Szerokość rękawa: 300mm - 2500mm</li>
                                         <div className={styles.additional}>
@@ -199,7 +199,7 @@ export default function Oferta(){
                                         <li>Grubość: 0,04mm - 0,2mm</li>
                                         <li>Długość worka: 300mm - 3000mm</li>
                                     </ul>
-                                    <h2>Dostępne kolory:</h2>
+                                    <h3>Dostępne kolory:</h3>
                                     <ul>
                                         <li>"słomka" (bezbarwny)</li>
                                         <li>biały (mleczny)</li>

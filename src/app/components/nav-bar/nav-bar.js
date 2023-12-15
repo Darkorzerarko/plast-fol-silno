@@ -36,15 +36,15 @@ export default function NavBar({quote, children, height}){
                 </div>
             </div>
             <div className={styles.quote}>
-            {children? 
-                <div className={styles.additional}>
-                    <h2>
-                        {children}
-                    </h2>
-                </div>
-                :
-                null
-            }
+                {children? 
+                    <div className={styles.additional}>
+                        <h2>
+                            {children}
+                        </h2>
+                    </div>
+                    :
+                    null
+                }
                 <h1>
                     {quote}
                 </h1>
