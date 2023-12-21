@@ -34,6 +34,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# own rules for ignoring files/folders
+/public/_*
+/public/business-partners
 
 
-/public/full-size-images
+/src/app/zaufali-nam

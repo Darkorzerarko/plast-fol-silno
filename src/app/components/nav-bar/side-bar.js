@@ -28,9 +28,9 @@ export default function SideNavBar(){
                 }}>
                 <div className={styles.nav_small_links}>
                     <Link href='/'><AiOutlineHome /> Strona Główna</Link>
-                    <Link href='/o-nas' ><GrCircleInformation /> O nas</Link>   
-                    <Link href='/oferta' ><MdOutlineLocalOffer /> Oferta</Link>
-                    <Link href='/kontakt' ><HiPhone /> Kontakt</Link>
+                    <Link href='/o-nas/' ><GrCircleInformation /> O nas</Link>   
+                    <Link href='/oferta/' ><MdOutlineLocalOffer /> Oferta</Link>
+                    <Link href='/kontakt/' ><HiPhone /> Kontakt</Link>
                 </div>
             </div>
         </>

@@ -39,7 +39,7 @@ export default function Home() {
                 Firma Plast-Fol ma swoje korzenie w malowniczym Silnie, położonym w województwie pomorskim. 
                 Z każdym rokiem nasza firma udowadnia, że przyszłość przemysłu może być bardziej ekologiczna i odpowiedzialna.
               </div>
-              <Link href="/o-nas">Dowiedz się więcej <BsFillArrowRightCircleFill /></Link>
+              <Link href="/o-nas/">Dowiedz się więcej <BsFillArrowRightCircleFill /></Link>
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
                   <li>Worki foliowe</li>
                 </ul>
               </div>
-              <Link href="/oferta">Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></Link>
+              <Link href="/oferta/">Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></Link>
             </div>
             <Gallery />
           </div>
@@ -75,7 +75,7 @@ export default function Home() {
               </h2>
               a może<br/>
               <h2>Masz pytanie?</h2>
-              <Link href="/kontakt">Skontaktuj się z nami <BsFillArrowRightCircleFill /></Link>
+              <Link href="/kontakt/">Skontaktuj się z nami <BsFillArrowRightCircleFill /></Link>
             </div>
             <TbMessageCircleQuestion className={styles.contact_svg}/>
           </div>

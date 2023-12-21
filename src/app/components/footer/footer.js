@@ -30,9 +30,9 @@ export default function Footer(){
                     </div>
                     <div className={styles.bottom_nav}>
                         <Link href='/'><AiOutlineHome /> Strona Główna</Link>
-                        <Link href='/o-nas' ><GrCircleInformation /> O nas</Link>   
-                        <Link href='/oferta' ><MdOutlineLocalOffer /> Oferta</Link>
-                        <Link href='/kontakt' ><HiPhone /> Kontakt</Link>
+                        <Link href='/o-nas/' ><GrCircleInformation /> O nas</Link>   
+                        <Link href='/oferta/' ><MdOutlineLocalOffer /> Oferta</Link>
+                        <Link href='/kontakt/' ><HiPhone /> Kontakt</Link>
                     </div>
                 </div>
                 
