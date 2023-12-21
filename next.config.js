@@ -6,7 +6,7 @@ const nextConfig = {
     // basePath: '/plast-fol-silno',
 
     trailingSlash: true,
-    skipTrailingSlashRedirect: true,
+    // skipTrailingSlashRedirect: true,
 
     images: { 
         unoptimized: true,
