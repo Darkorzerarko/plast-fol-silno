@@ -83,7 +83,7 @@ export default function AboutUs() {
               <h2>Recykling i produkcja</h2>
               Wytworzony podczas recyklingu regranulat używany jest do wytwarzania foli LDPE, która jest głównym elementem naszej produkcji. 
               Z niej tworzy się następnie taśmy, rękawy czy worki.
-              <Link href="/oferta">Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></Link>
+              <Link href="/oferta/">Poznaj szczegóły naszej oferty <BsFillArrowRightCircleFill /></Link>
 
             </div>
           </div>
